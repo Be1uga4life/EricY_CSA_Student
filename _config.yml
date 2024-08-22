@@ -5,7 +5,7 @@ github_username: nighthawkcoders
 github_repo: "student_2025" 
 baseurl: "/student_2025"
 url: "https://be1uga4life.github.io/CSA_Student/"
-github_rep: "CSA_Student"
+github_repo: "CSA_Student"
 future: true
 # remote_theme: jekyll/minima
 minima:
