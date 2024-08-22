@@ -5,4 +5,5 @@ description: Home Page
 hide: true
 ---
 
-My journey starts here.
+Hello 👋👋👋 ! My name is Eric, a Junior who is dedicated the field of Comptuer Science!
+
