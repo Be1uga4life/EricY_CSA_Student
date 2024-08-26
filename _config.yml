@@ -2,10 +2,9 @@ title: Nighthawk Pages
 description: "Class of 2025"
 owner_name: John Mortensen
 github_username: nighthawkcoders
-github_repo: "student_2025" 
 baseurl: "/CSA_Student"
-url: "https://be1uga4life.github.io/CSA_Student/"
-github_repo: "CSA_Student"
+url: "https://be1uga4life.github.io/EricY_CSA_Student/"
+github_repo: "EricY_CSA_Student"
 future: true
 # remote_theme: jekyll/minima
 minima:
