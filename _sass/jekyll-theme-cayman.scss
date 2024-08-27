@@ -54,7 +54,7 @@ body {
 }
 
 a {
-  color: orange;
+  color: #00b1ff;
   text-decoration: none;
 
   &:hover {
@@ -110,18 +110,35 @@ a {
     color: $header-heading-color;
     text-align: center;
     
-    background-color: $header-bg-color;
-    background-image: linear-gradient(120deg, black, red);
-    
-    /*custom styles, for example grayscale appearance*/
-    filter: grayscale(0.8);
+    background: linear-gradient(270deg, #00b1ff, #000000, #000000);
+    background-size: 600% 600%;
 
-    /*additional tweaks for positioning, read more in the link above*/
-    height: 25%;
-    width: 177.77777778vh; /* 100 * 16 / 9 */
-    min-width: 100%;
-    min-height: 56.25vw; /* 100 * 9 / 16 */
+    -webkit-animation: AnimationName 21s ease infinite;
+    -moz-animation: AnimationName 21s ease infinite;
+    -o-animation: AnimationName 21s ease infinite;
+    animation: AnimationName 21s ease infinite;
   }
+
+  @-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
 
   @include large {
     padding: 5rem 6rem;
@@ -222,7 +239,7 @@ a {
     margin-bottom: 1rem;
     font-weight: normal;
     color: $section-headings-color;
-    color: crimson;
+    color: #00b1ff;
   }
 
   p {
