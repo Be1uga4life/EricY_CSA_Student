@@ -30,6 +30,7 @@
       {%- endfor -%}
       {% if site.github.is_project_page %}
         <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
+        <a class="btn" onclick="toggleMode()">Dark Mode/Light Mode</a>
       {% endif %}
     </header>
 
@@ -45,3 +46,10 @@
     </main>
   </body>
 </html>
+
+<script>
+  function toggleMode() {
+     var element = document.body;
+     element.classList.toggle("dark-mode");
+  }
+</script>

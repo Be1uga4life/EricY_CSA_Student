@@ -15,7 +15,6 @@ ___
 
 ___
 
-## Links:
 
 - ### 👨‍💻 [GitHub](https://github.com/Be1uga4life)  
   #### Feel free to check out my repositories on Github!
