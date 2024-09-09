@@ -6,15 +6,26 @@ hide: true
 ---
 
 # **Hello! 👋👋👋**    
-## **My name is Eric, a Junior who is dedicated the field of Computer Science!**  
+## **My name is Eric, a Junior taking CSA !**  
 
 
 ___
 
-![picture](images/eric.jpg)
+A picture of me            |  Some pictures that represent me
+:-------------------------:|:-------------------------:
+![picture](images/eric.jpg)  |  ![alt text](images/image.png)
+
+
 
 ___
 
+Hi my name is Eric Yu, Some of my interests include:
+
+- Neural Networks/Machine Learning (Tensorflow, PyTorch)
+- Cybersecurity (Primarily Linux-based OS)
+- CTF Based Competitions
+- Swimming (Del Norte Swim Team)
+- Playing Video Games
 
 - ### 👨‍💻 [GitHub](https://github.com/Be1uga4life)  
   #### Feel free to check out my repositories on Github!
