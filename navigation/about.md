@@ -2,7 +2,7 @@
 layout: page
 title: About
 permalink: /about/
-
+comments: true
 ---
 
 # **Hello! 👋👋👋**    
@@ -20,18 +20,23 @@ A picture of me            |  Some pictures that represent me
 ___
 
 
-Hi my name is Eric Yu, I am interested in many areas, namely:
+## Hi my name is Eric Yu, I am interested in many areas, namely:
 
-- Neural Networks/Machine Learning (Tensorflow, PyTorch)
-- ![alt text](../images/neural.png)
-- Cybersecurity (Primarily Linux-based OS)
-- ![alt text](image.png)
-- CTF Based Competitions
-- ![alt text](image-1.png)
-- Swimming (Del Norte Swim Team)
-- ![alt text](image-2.png)
-- Playing Video Games
-- ![alt text](image-3.png)
+### Neural Networks/Machine Learning (Tensorflow, PyTorch)
+![alt text](../images/neural.png)
+
+
+### Cybersecurity (Primarily Linux-based OS)
+![alt text](image.png)
+
+### CTF Based Competitions
+![alt text](image-1.png)
+
+### Swimming (Del Norte Swim Team)
+![alt text](image-2.png)
+
+### Playing Video Games
+![alt text](image-3.png)
 
 
 - ### 👨‍💻 [GitHub](https://github.com/Be1uga4life)  
