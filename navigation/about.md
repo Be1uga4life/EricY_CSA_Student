@@ -47,3 +47,11 @@ ___
 
 - ### 💻 [LinkedIn](https://www.linkedin.com/in/eric-yu-391b0a21b/)  
   #### Feel free to send me an invite to connect on Linkedin
+
+  <script src="https://utteranc.es/client.js"
+        repo="Be1uga4life/EricY_CSA_Student"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
