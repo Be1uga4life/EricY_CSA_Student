@@ -2,7 +2,7 @@
 
 ---
 
-```Java
+```java
 class Animal:
     def __init__(self, group):
         self.group = group
@@ -28,7 +28,7 @@ shark.getInfo()
 ```
 
 
-```Java
+```java
 class Animal {
     private String group;
 
@@ -77,7 +77,7 @@ For example, for the `main` function the signature states that the method is a `
 
 
 
-```Java
+```java
 public class Main {
     public static void main(String args[]) {
         System.out.println("📝 Main method is executed, method has nothing to return.");
@@ -149,7 +149,7 @@ The signature of a method does NOT include the return value though for overloadi
 Imagine you have a method called `printTwoNumbers()` and you had 3 implementations of it as shown below.
 
 
-```Java
+```java
 public void printTwoNumbers() {
     System.out.println(1);
     System.out.println(1);
@@ -182,7 +182,7 @@ For each of the 3 method calls below, what would happen?
 
 
 
-```Java
+```java
 printTwoNumbers(2);
 printTwoNumbers();`
 printTwoNumbers(5, 6);
@@ -238,7 +238,7 @@ Here is a list of signatures. For each signature, you must be able to tell wheth
 6. `public void function_6(char funnyChar)`
 
 
-```Java
+```java
 public class MathMachine {
     private static boolean isEven(int num) {
         if (num%2 == 0) {
@@ -310,7 +310,7 @@ public static void getEvenOrOdd(int num) {
 
 
 
-```Java
+```java
 // What calls are necessary for this code to run?
 
 public class Main {
@@ -325,7 +325,7 @@ public class Main {
 ```
 
 
-```Java
+```java
 // OPTION A
 public static void printTwoNumbers(int num1, int num2) {
     System.out.println("Integers: " + num1 + " and " + num2);
@@ -346,7 +346,7 @@ public static void printTwoNumbers(String str, int num) {
 ```
 
 
-```Java
+```java
 // OPTION B
 public static void printTwoNumbers(int num1, int num2) {
     System.out.println("Sum: " + (num1 + num2));
@@ -367,7 +367,7 @@ public static void printTwoNumbers(int num, String str) {
 ```
 
 
-```Java
+```java
 // OPTION C
 public static void printTwoNumbers(int num1, int num2) {
     System.out.println(num1 + num2);
@@ -388,7 +388,7 @@ public static void printTwoNumbers(int num, String str) {
 ```
 
 
-```Java
+```java
 // OPTION D
 public static void printTwoNumbers(int num1, int num2) {
     System.out.println("Numbers: " + num1 + ", " + num2);
@@ -413,6 +413,6 @@ ___
 ### MCQ Question 2
 
 
-```Java
+```java
 
 ```

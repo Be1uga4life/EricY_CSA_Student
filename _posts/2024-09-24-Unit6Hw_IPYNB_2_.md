@@ -12,12 +12,12 @@ comments: True
 6.1 Popcorn Hack #1
 
 
-```Java
+```java
 String[] cityArray = {"San Diego", "Los Angeles", "San Francisco", "Sacramento"};
 ```
 
 
-```Java
+```java
 System.out.println(cityArray[0]);
 System.out.println(cityArray[2]);
 ```
@@ -27,7 +27,7 @@ System.out.println(cityArray[2]);
 
 
 
-```Java
+```java
 cityArray[1] = "Sacramento";
 cityArray[3] = "San Jose";
 ```
@@ -40,7 +40,7 @@ cityArray[3] = "San Jose";
 
 
 
-```Java
+```java
 System.out.println(cityArray.length);
 ```
 
@@ -50,7 +50,7 @@ System.out.println(cityArray.length);
 6.1 Popcorn Hack #2
 
 
-```Java
+```java
 public class DefaultValuesArray {
     public static void main(String[] args) {
         int[] gojo = new int[4]; 
@@ -101,7 +101,7 @@ ___
 6.2 Popcorn Hack #1
 
 
-```Java
+```java
 public class thingy {
     public static int sumOfEvenNumbers(int[] arr) {
         int sum = 0; 
@@ -130,7 +130,7 @@ thingy.main(null)
 6.2 Popcorn Hack #2
 
 
-```Java
+```java
 public class thingy {
     public static int countOccurrences(int[] arr, int target) {
         int count = 0; // Start with no occurrences
@@ -166,7 +166,7 @@ thingy.main(null)
 6.2 Popcorn Hack #3
 
 
-```Java
+```java
 public class skib {
     public static int firstNegativeIndex(int[] arr) {
         int i = 0; 
@@ -218,7 +218,7 @@ This condition ensures the loop only runs for the first half of the array, swapp
 6.3 Homework Hack
 
 
-```Java
+```java
 public class Main {
 
     public static int findSecondLargest(int[] arr) {
@@ -263,7 +263,7 @@ Main.main(null)
 6.3 Popcorn Hack #1
 
 
-```Java
+```java
 String[] languages = {"Java", "Python", "Markdown", "C++", "Go", "JavaScript", "HTML"};
 
 for (String language : languages) {
@@ -284,7 +284,7 @@ for (String language : languages) {
 6.3 Popcorn Hack #2
 
 
-```Java
+```java
 String[] myArray = {"And", "Table", "Shirts", "Tea", "School Day"};
 
 for (String currentWord : myArray) {
@@ -300,7 +300,7 @@ for (String currentWord : myArray) {
 
 
 
-```Java
+```java
 private String[] myArray = {
     "And", "Table", "Shirts", "Tea", "School Day"
 };
@@ -319,7 +319,7 @@ for (String currentWord : myArray) {
 
 
 
-```Java
+```java
 String[] myArray = {"And", "Table", "Shirts", "Tea", "School Day"};
 
 for (String currentWord : myArray) {
@@ -341,7 +341,7 @@ for (String currentWord : myArray) {
 
 
 
-```Java
+```java
 String[] myArray = {"Object 1", "Object 2", "Object 3", "Object 4", "Object 5"};
 
 for (String currentWord : myArray) { // Added type declaration
@@ -358,7 +358,7 @@ for (String currentWord : myArray) { // Added type declaration
 
 
 
-```Java
+```java
 public class AverageGradeCalculator {
     public static void main(String[] args) {
         // Array of initial grades
@@ -441,7 +441,7 @@ ___
 6.4 Popcorn Hack #1
 
 
-```Java
+```java
 public class MaxMinInArray {
 
     public static void findMaxAndMin(int[] array) {
@@ -496,7 +496,7 @@ MaxMinInArray.main(null)
 6.4 HW Hack
 
 
-```Java
+```java
 public class ReverseArrayOutput {
 
     public static void main(String[] args) {
@@ -521,7 +521,7 @@ ReverseArrayOutput.main(null)
 
 
 
-```Java
+```java
 public class WordShifter {  
     public static void main(String[] args) {
         String[] words = {"gamma", "beta", "alpha", "delta"};

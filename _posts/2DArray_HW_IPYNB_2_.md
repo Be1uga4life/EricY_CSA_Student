@@ -2,7 +2,7 @@
 
 ---
 
-```Java
+```java
 String[][] grades = {
     {"Hello", "World"},
     {"Java", "Array"}
@@ -14,7 +14,7 @@ String[][] grades = {
 #### Popcorn Hack #2, How many total elements can this 2D array hold, and how would you calculate it?
 
 
-```Java
+```java
 
 // There are two rows and columns, therefore there are 6 elements since 2 times 3 is 6.
 int[][] matrix = new int[2][3];
@@ -45,7 +45,7 @@ The ansewr is be D
 Try it on your own, declare + initlialize the 2D array.
 
 
-```Java
+```java
 public class ArrayPractice {
     public static void main(String[] args) {
         // Write the code to declare and initialize the 2D array here
@@ -62,7 +62,7 @@ ArrayPractice.main(null)
 Try it on your own. Change from Java to Programming
 
 
-```Java
+```java
 String[][] hack = {
     {"Hello", "World"},
     {"Java", "Array"}
@@ -91,7 +91,7 @@ ___
 Popcorn Hack #1, find the specific number and return specific index
 
 
-```Java
+```java
 public class Main {
     public static void main(String[] args) {
         int find[][] = {
@@ -125,7 +125,7 @@ Main.main(null);
 Binary Search/Linear Search Popcorn Hack
 
 
-```Java
+```java
 public class Main {
     public static void main(String[] args) {
         // Custom 2D array with sorted rows
@@ -196,7 +196,7 @@ Main.main(null);
 Popcorn Hack, Write a code that performs global sorting on the 2D array
 
 
-```Java
+```java
 public class PopcornHack {
     public static void main(String[] args) {
         int[][] array = {
@@ -293,7 +293,7 @@ ___
 ### HW Hack for 8.1:
 
 
-```Java
+```java
 public class Main {
     public static void main(String[] args) {
         String[][] array = {{"My", "A"}, {"AP", "Class"}, {"CS", "Rocks!"}};
@@ -318,7 +318,7 @@ There are three rows, and two columns. If following the rows from left to right,
 ### HW Hack for 8.2:
 
 
-```Java
+```java
 public class GradeSearch {
     public static String searchGrade(String[][] grades, String name) {
         for (String[] student : grades) {
