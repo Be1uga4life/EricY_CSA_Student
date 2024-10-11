@@ -22,6 +22,7 @@ This is my blog for CSA units 1-9, I created this blog on topics that I didn't q
 The highlight of my Contribution was when I suggested the Basketball game and also provided visual diagrams within my lesson. I also remember trying to rush the lesson while spewing a lot of slang, which was definitley funny.
 
 ![something](https://github.com/user-attachments/assets/86be5c1e-8bc8-4e15-8252-54cb561e84f4)
+![lskfd](https://github.com/user-attachments/assets/d0758021-b9c4-4889-ad57-1d4e950f7838)
 
 ---
 
@@ -39,3 +40,4 @@ In my personal experiences, I felt like i've solidified many of my basic Java co
 
 ![something](https://github.com/user-attachments/assets/a233f22d-1207-47af-a48a-bf79289cd211)
 ![lkj](https://github.com/user-attachments/assets/57be5291-bb0a-473b-b746-f224214a2648)
+
