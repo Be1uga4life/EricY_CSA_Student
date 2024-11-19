@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grades Analytics</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- For histogram and pie chart -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> <!-- For box-and-whisker plot -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        #histogram, #boxPlot, #pieChart {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Grades Analytics</h1>
+
+    <!-- Histogram Section -->
+    <h2>Histogram of Grades</h2>
+    <canvas id="histogram" width="400" height="200"></canvas>
+
+    <!-- Pie Chart Section -->
+    <h2>Pie Chart of Grade Distribution</h2>
+    <canvas id="pieChart" width="400" height="200"></canvas>
+
+    <!-- Box and Whisker Plot Section -->
+    <h2>Box and Whisker Plot</h2>
+    <div id="boxPlot"></div>
+</div>
+<script>
+    // Function to fetch grades and statistics from the server
+    async function fetchGrades() {
+        const response = await fetch('http://localhost:8085/api/analytics/assignment/1/grades');  // Change '1' to the actual assignment ID if needed
+        if (response.ok) {
+            const data = await response.json();
+
+            // Data from the server
+            const grades = data.grades;  // The grades array
+
+            // Plot the histogram, pie chart, and box plot
+            createHistogram(grades);
+            createPieChart(grades);
+            createBoxPlot(grades);
+        } else {
+            console.error('Failed to fetch grades data:', response.status);
+        }
+    }
+
+    // Function to create the histogram using Chart.js
+    function createHistogram(grades) {
+        const ctx = document.getElementById('histogram').getContext('2d');
+        const histogram = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: grades, // x-axis: the grades
+                datasets: [{
+                    label: 'Frequency of Grades',
+                    data: grades, // y-axis: same as the x-axis since we're just showing grades' frequencies
+                    backgroundColor: 'rgba(75, 192, 192, 0.6)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                },
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Grades Histogram'
+                    }
+                }
+            }
+        });
+    }
+
+    // Function to create the pie chart using Chart.js
+    function createPieChart(grades) {
+        const ctx = document.getElementById('pieChart').getContext('2d');
+
+        // Grouping grades into ranges for the pie chart (e.g., A: 90-100, B: 80-89, etc.)
+        const gradeRanges = {
+            'A (90-100)': grades.filter(g => g >= 90).length,
+            'B (80-89)': grades.filter(g => g >= 80 && g < 90).length,
+            'C (70-79)': grades.filter(g => g >= 70 && g < 80).length,
+            'D (60-69)': grades.filter(g => g >= 60 && g < 70).length,
+            'F (< 60)': grades.filter(g => g < 60).length
+        };
+
+        const pieChart = new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: Object.keys(gradeRanges), // Grade ranges
+                datasets: [{
+                    label: 'Grade Distribution',
+                    data: Object.values(gradeRanges), // Number of grades in each range
+                    backgroundColor: [
+                        'rgba(54, 162, 235, 0.6)',  // A
+                        'rgba(75, 192, 192, 0.6)',  // B
+                        'rgba(255, 206, 86, 0.6)',  // C
+                        'rgba(255, 159, 64, 0.6)',  // D
+                        'rgba(255, 99, 132, 0.6)'   // F
+                    ],
+                    borderColor: [
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(255, 159, 64, 1)',
+                        'rgba(255, 99, 132, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Grade Distribution Pie Chart'
+                    }
+                }
+            }
+        });
+    }
+
+    // Function to create the box and whisker plot using Plotly.js
+    function createBoxPlot(grades) {
+        const trace1 = {
+            y: grades,
+            type: 'box',
+            boxpoints: 'all', // Show all points
+            jitter: 0.5,      // Add some jitter for better visibility
+            marker: {
+                color: 'rgba(255, 99, 132, 0.8)'
+            },
+            name: 'Grades'
+        };
+
+        const layout = {
+            title: 'Grades Box and Whisker Plot',
+            yaxis: {
+                title: 'Grades',
+                zeroline: false
+            }
+        };
+
+        Plotly.newPlot('boxPlot', [trace1], layout);
+    }
+
+    // Fetch the grades and stats on page load
+    window.onload = fetchGrades;
+</script>
+
+</body>
+</html>
