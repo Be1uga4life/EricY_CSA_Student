@@ -135,3 +135,17 @@ W
 WA  
 WAT  
 WATC
+
+### Strengths and Weaknesses
+
+Strengths:
+
+- Understanding how full-stacks work and the logic behind them
+- Collaborating with the team to solve issues
+- Decent base in Java 
+
+Weaknesses
+
+- Sometimes may be careless or inefficient with Java (carelessness while coding)
+- Can be unorganized at times
+- Javascript is one of my weaker languages

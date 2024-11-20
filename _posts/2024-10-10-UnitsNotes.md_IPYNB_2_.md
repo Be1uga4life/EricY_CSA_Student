@@ -2,7 +2,7 @@
 layout: post
 title: Notes on Units 1-9
 description: Summary of all the units/Notes on all of the units
-type: collab
+type: issues
 toc: True
 permalink: notes/
 menu: nav/CSA_Units/csa_notes.html
