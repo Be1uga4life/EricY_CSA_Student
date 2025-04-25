@@ -20,22 +20,36 @@ categories: ['Collaboration']
 
 I implemented the `HiddenWord` class, and according to the rubric, here’s how I did:
 
-- **+1** Used the correct class, constructor, and method headers ✅
-- **+1** Declared `private` instance variable ✅
-- **+1** Initialized the instance variable properly in the constructor ✅
-- **+6** Implemented `getHint` method:
-  - **+1** Looped through all letters in both `guess` and `hiddenWord` without index errors ✅
-  - **+4** Processed each letter correctly:
-    - **+1** Extracted and compared letters from `guess` and `hiddenWord` ✅
-    - **+1** Checked if letters were in the same position ✅
-    - **+1** Checked if letters were in the word but in the wrong spot ✅
-    - **+1** Added the correct character (`letter`, `+`, or `*`) to the hint ✅
-  - **+1** Constructed and returned the hint string ✅
+| Points | Criteria | Status |
+|--------|----------|--------|
+| **+1** | Used the correct class, constructor, and method headers | ✅ |
+| **+1** | Declared `private` instance variable | ✅ |
+| **+1** | Initialized the instance variable properly in the constructor | ✅ |
+| **+6** | Implemented `getHint` method: | ✅ |
+| **+1** | Looped through all letters in both `guess` and `hiddenWord` without index errors | ✅ |
+| **+4** | Processed each letter correctly: | ✅ |
+| **+1** | Extracted and compared letters from `guess` and `hiddenWord` | ✅ |
+| **+1** | Checked if letters were in the same position | ✅ |
+| **+1** | Checked if letters were in the word but in the wrong spot | ✅ |
+| **+1** | Added the correct character (`letter`, `+`, or `*`) to the hint | ✅ |
+| **+1** | Constructed and returned the hint string | ✅ |
 
+### Possible Deductions
+
+| Possible Deduction | Reason |
+|-------------------|--------|
+| **-1** | If I used `.get()` instead of `charAt()` to access letters in strings |
+| **-2** | If I accidentally used the wrong variable name instead of `hiddenWord` |
+
+### Additional Consideration
+
+It is possible I lose points for multiple letters? 
+
+For example, in `SHARP`, if I already got the first `S` correct but guessed `S` for the last character, should it show a `+` or a `*`? 
 
 ### Final Thoughts
 
-Overall, my code follows the rubric closely, but I need to double-check for any small mistakes, like how I access characters and making sure I use the right variable names everywhere. If I fix those, I should get full points! 🎯
+I managed this one pretty well, although  the time was slightly edge.
 
 
 
@@ -49,47 +63,31 @@ public class HiddenWord {
 
     public String getHint(String guess) {
         StringBuilder hint = new StringBuilder();
-        int[] letterCount = new int[26]; // Track frequency of letters in hiddenWord
-
-        // First pass: Identify exact matches
-        for (int i = 0; i < hiddenWord.length(); i++) {
-            if (guess.charAt(i) == hiddenWord.charAt(i)) {
-                hint.append(guess.charAt(i)); // Correct position
+        for (int i = 0; i < guess.length(); i++) {
+            char guessChar = guess.charAt(i);
+            if (guessChar == hiddenWord.charAt(i)) {
+                hint.append(guessChar);
+            } else if (hiddenWord.indexOf(guessChar) != -1) {
+                hint.append('+'); 
             } else {
-                hint.append('.'); // Placeholder for second pass
-                letterCount[hiddenWord.charAt(i) - 'A']++; // Count letter occurrences
+                hint.append('*'); 
             }
         }
-
-        // Second pass: Identify misplaced letters
-        for (int i = 0; i < hiddenWord.length(); i++) {
-            if (hint.charAt(i) == '.') { // Only check non-matching positions
-                char guessChar = guess.charAt(i);
-                if (letterCount[guessChar - 'A'] > 0) {
-                    hint.setCharAt(i, '+'); // Right letter, wrong position
-                    letterCount[guessChar - 'A']--; // Reduce count
-                } else {
-                    hint.setCharAt(i, '*'); // Letter not in word
-                }
-            }
-        }
-
         return hint.toString();
     }
 
     public static void main(String[] args) {
         HiddenWord puzzle = new HiddenWord("HARPS");
-        System.out.println(puzzle.getHint("AAAAA")); // Expected Output: "*A+++"
-        System.out.println(puzzle.getHint("HARPS")); // Expected Output: "HARPS"
-        System.out.println(puzzle.getHint("SHARP")); // Expected Output: "+HARP"
+        System.out.println(puzzle.getHint("AAAAA"));
+        System.out.println(puzzle.getHint("HARPS"));
+        System.out.println(puzzle.getHint("SHARP")); 
     }
 }
 
 HiddenWord.main(null)
-
 ```
 
-    *A***
+    +A+++
     HARPS
     +++++
 

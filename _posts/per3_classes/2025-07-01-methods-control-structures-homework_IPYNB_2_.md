@@ -99,7 +99,7 @@ Your task is to write a method `solveMaze(char[][] maze, int startX, int startY)
 ---
 
 
-```python
+```java
 public class MazeSolver {
     public static void main(String[] args) {
         char[][] maze = {

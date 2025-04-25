@@ -4,7 +4,7 @@ title: CollegeBoard FRQ Reflection
 description: CollegeBoard FRQ Reflection
 type: collab
 toc: True
-permalink: FRQ/corrections
+permalink: FRQ/corrections2015
 comments: True
 author: Eric Yu
 categories: ['Collaboration']

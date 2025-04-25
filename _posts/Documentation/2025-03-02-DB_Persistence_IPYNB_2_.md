@@ -43,7 +43,7 @@ A **database schema** defines the structure of the data, including **tables, rel
 - **JPA Annotations** (`@Entity`, `@Table`, etc.)  
 - **Database Migration Tools** (Liquibase/Flyway)  
 
-If you have worked with the backend, you are sure to have seen this before, schema is defined in blocks of code that look like this:
+If you have worked with the backend, you are sure to have seen this before, schema is defined in blocks of code that look like this. Schema is important in my feature because the database is constantly changing, which includes its schema. In fact I have written an entire portion on schema on the flowchart you'll see below. 
 
 
 
