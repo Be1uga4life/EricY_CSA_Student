@@ -63,7 +63,7 @@ Step 3: Merge the Halves 🏗️
  Write a Java program that merges two already sorted arrays into one sorted array without using extra sorting functions.
 
 
-```Java
+```java
 public class imsorrythisislate {
     public static void main(String[] args) {
         int[] sorted1 = {1,2,3,4,5};
@@ -79,52 +79,12 @@ public class imsorrythisislate {
         }
 
         String results = mergeSorted.toString();
+        System.out.println(results);
     }
 }
 
 imsorrythisislate.main(null);
 ```
 
-
-    |           String results = Arrays.toString(mergeSorted);
-
-    no suitable method found for toString(java.util.ArrayList<java.lang.Integer>)
-
-        method java.util.Arrays.toString(long[]) is not applicable
-
-          (argument mismatch; java.util.ArrayList<java.lang.Integer> cannot be converted to long[])
-
-        method java.util.Arrays.toString(int[]) is not applicable
-
-          (argument mismatch; java.util.ArrayList<java.lang.Integer> cannot be converted to int[])
-
-        method java.util.Arrays.toString(short[]) is not applicable
-
-          (argument mismatch; java.util.ArrayList<java.lang.Integer> cannot be converted to short[])
-
-        method java.util.Arrays.toString(char[]) is not applicable
-
-          (argument mismatch; java.util.ArrayList<java.lang.Integer> cannot be converted to char[])
-
-        method java.util.Arrays.toString(byte[]) is not applicable
-
-          (argument mismatch; java.util.ArrayList<java.lang.Integer> cannot be converted to byte[])
-
-        method java.util.Arrays.toString(boolean[]) is not applicable
-
-          (argument mismatch; java.util.ArrayList<java.lang.Integer> cannot be converted to boolean[])
-
-        method java.util.Arrays.toString(float[]) is not applicable
-
-          (argument mismatch; java.util.ArrayList<java.lang.Integer> cannot be converted to float[])
-
-        method java.util.Arrays.toString(double[]) is not applicable
-
-          (argument mismatch; java.util.ArrayList<java.lang.Integer> cannot be converted to double[])
-
-        method java.util.Arrays.toString(java.lang.Object[]) is not applicable
-
-          (argument mismatch; java.util.ArrayList<java.lang.Integer> cannot be converted to java.lang.Object[])
-
-    
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
