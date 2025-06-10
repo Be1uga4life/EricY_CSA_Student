@@ -32,7 +32,7 @@ Initially, I joined the `Assignments` group and helped debug assignment creation
 - Created backend API endpoints to compute summary statistics
 - Built the frontend to display these stats as graphs
 
-![Image](https://github-production-user-asset-6210df.s3.amazonaws.com/92126864/453600842-a8dee89c-09d2-450e-adb5-8f0295c02834.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250610%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250610T182456Z&X-Amz-Expires=300&X-Amz-Signature=2d24cbf52ea5b5c66272dcd127ceb3f55894807624a90d29b05fdd4a42c261b1&X-Amz-SignedHeaders=host)
+![Image](https://github.com/user-attachments/assets/a8dee89c-09d2-450e-adb5-8f0295c02834)
 
 ---
 
