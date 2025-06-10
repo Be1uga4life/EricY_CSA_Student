@@ -5,79 +5,102 @@ permalink: /finalReview
 authors: Eric Yu
 ---
 
-## About Me
-High School Junior with a passion for cybersecurity, computer science, and machine learning. I enjoy creating different personal projects especially regarding anything in machine learning. I've combined conventional machine models with LLM enchancements, and experimented with models in many different ways.
+# Eric Yu – Portfolio
 
-I enjoy working on the backend a lot. Throughout my time working on projects, my Java skills have been taken a notch up, my understanding of databases have gone up, and especially my debugging skills. 
-
-## Project Overview
-My database backup management is under the Database/UI group, which is in charge of managing the Database and the UI of the entire website. My specific feature allows the class to backup and restore the database to a previous feature. This is helpful when we need to perform a schema upgrade, in which we need to delete the database.
-
-
-### Grade Analytics (Before December - December)
-I started off CSA with the assignments group, helping debug and assist with the assignment creation. I became responsible for creating grade analytics. The grade analytics displays the average class scores on an assignment, and the individual grades that the user got. 
-- I created the backend API points to calculate the summary statistics
-- I created the frontend to take those summary statistics and graph them out
-
-![image.png](image.png)
-
-### Database Backups (December - Now)
-My database backup management is under the Database/UI group, which is in charge of managing the Database and the UI of the entire website. My specific feature allows the class to backup and restore the database to a previous feature. This is helpful when we need to perform a schema upgrade, in which we need to delete the database.
-- Created the API for the backups entirely by myself
-- Created the frontend page mostly by myself (Lilian integrated my HTML page into ThymeLeaf)
-
-![image-2.png](image-2.png)
-
-
-### Bug Fixes (May)
-I also fixed the issue of having to delete the database after every single run, by creating a script to switch from auto-ddl from "update" to "none" when needed:
-
-![image-3.png](image-3.png)
+### High School Junior | Cybersecurity · Machine Learning · Backend Development
 
 ---
 
-## Data Structures Certification & Academic Excellence
+## 👨‍💻 About Me
 
-### Certification Achievement
-Throughout the six months I've worked on database, I've come to have a complex understanding on how databases work, and also how the different tables are composed for each group.
+I'm a high school junior with a passion for **cybersecurity**, **computer science**, and **machine learning**. I enjoy working on personal projects—especially those involving machine learning—where I’ve experimented with combining conventional models and large language model (LLM) enhancements.
 
-Complex understanding of SQLite Databases
-- Operations in SQLite database --> (PUT EXAMPLE HERE)
-- Different SQLite configurations (i.e WAL mode, delay)
-
-Complex knowledge of Server Tables
-- Because I had to work with all tables for this class, I have a comprehensive understanding of all tables.
+I focus heavily on backend development. Through my projects, I’ve sharpened my **Java skills**, deepened my **understanding of databases**, and significantly improved my **debugging abilities**.
 
 ---
 
-## Academic Work & Homework Portfolio
-[Selection/Insertion Sort](https://be1uga4life.github.io/EricY_CSA_Student/sortingTT/sorting/hw/)
+## 💾 Project Overview
 
-[Merge Sort Hw](https://be1uga4life.github.io/EricY_CSA_Student/csa/team_teach/merge_sort_hw)
-
-[Graph Heuristics](https://be1uga4life.github.io/EricY_CSA_Student/csa/team_teach/merge_sort_hw)
-
-[Machine Learning](https://be1uga4life.github.io/EricY_CSA_Student/csa/team_teach/merge_sort_hw)
-
-Taught Calculator Enactment
+I work in the `Database/UI` group, which manages both the backend database and the user interface of our website. My primary contribution has been a **database backup management system** that allows the class to **backup and restore** the database—critical for safe schema upgrades that require a full reset.
 
 ---
 
-## Project Showcasing Experience
+### 📊 Grade Analytics (Before December – December)
 
-### Night at the Museum (N@tM) - June 2025
-Night at the Museum was an amazing opportunity to be able to share our work for the past months, receive feedback, and see what other students work as well. I received feedback on my project, and from presenting it received ideas about a new potential place for it to be used and adapted to that I hadn’t considered before. 
+Initially, I joined the `Assignments` group and helped debug assignment creation. I eventually became responsible for developing a **Grade Analytics** feature.
 
-Honestly, database backups wasn't the best feature to attract a crowd. Out of all the features in the class, it is probably the least marketable. However I did have a good time having discussions with parents that were willing to stand and listen to me explain how the database supports our entire server, and where my database backups plays into it.
+- Created backend API endpoints to compute summary statistics
+- Built the frontend to display these stats as graphs
 
-[Link to Post](https://github.com/Be1uga4life/EricY_CSA_Student/issues/24)
-
+![Image](https://github-production-user-asset-6210df.s3.amazonaws.com/92126864/453600842-a8dee89c-09d2-450e-adb5-8f0295c02834.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250610%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250610T182456Z&X-Amz-Expires=300&X-Amz-Signature=2d24cbf52ea5b5c66272dcd127ceb3f55894807624a90d29b05fdd4a42c261b1&X-Amz-SignedHeaders=host)
 
 ---
 
-## Stats
+### 🗄️ Database Backups (December – Now)
 
-The commits github analytics wasn't working.
-![image-4.png](image-4.png)
-![image-5.png](image-5.png)
-![image-6.png](image-6.png)
+A critical feature in the Database/UI team, this tool allows full **backup and restoration** of our SQLite database:
+
+- Developed the **backend API** independently
+- Designed and built most of the **frontend UI** (integrated into ThymeLeaf by a teammate)
+
+![Image](https://github.com/user-attachments/assets/db30ff26-c044-48a0-b92d-efe256763a21)
+
+---
+
+### 🐛 Bug Fixes (May)
+
+Fixed a longstanding issue requiring database deletion after each server run:
+
+- Created a script to toggle auto-DDL from `"update"` to `"none"` as needed
+
+![Image](https://github.com/user-attachments/assets/4736848c-1793-4e40-88b9-70aac7c560bc)
+
+---
+
+## 🧠 Data Structures Certification & Academic Excellence
+
+### ✅ Certification Achievement
+
+Over six months of working on the database system, I’ve gained a **complex understanding** of relational data structures and SQLite operations.
+
+- **Advanced SQLite Knowledge**:
+  - Example: WAL mode, delayed transactions, schema upgrades
+- **Comprehensive Table Understanding**:
+  - Worked with **all class-wide server tables**
+
+---
+
+## 📚 Academic Work & Homework Portfolio
+
+- [Selection/Insertion Sort](https://be1uga4life.github.io/EricY_CSA_Student/sortingTT/sorting/hw/)
+- [Merge Sort Homework](https://be1uga4life.github.io/EricY_CSA_Student/csa/team_teach/merge_sort_hw)
+- [Graph Heuristics](https://be1uga4life.github.io/EricY_CSA_Student/csa/team_teach/merge_sort_hw)
+- [Machine Learning Experiments](https://be1uga4life.github.io/EricY_CSA_Student/csa/team_teach/merge_sort_hw)
+- Taught a **Calculator Enactment** during a classroom lesson
+
+---
+
+## 🎤 Project Showcasing Experience
+
+### Night at the Museum (N@tM) – June 2025
+
+An amazing opportunity to share and present our semester-long work:
+
+> While my database backup system isn’t the flashiest feature, it sparked insightful conversations with parents and visitors who were curious about the foundation of our server architecture. I also received suggestions for potential real-world use cases I hadn’t considered before.
+
+📌 [View My Event Post](https://github.com/Be1uga4life/EricY_CSA_Student/issues/24)
+
+---
+
+## 📈 GitHub Statistics
+
+Unfortunately, GitHub analytics page was broken at the time. Here are snapshots of my commit history and contributions:
+
+![Image](https://github.com/user-attachments/assets/f72e1381-80df-4017-b190-6d8cf74073be)
+
+![Image](https://github.com/user-attachments/assets/611e4fc5-bb24-46cd-ad8f-e7c875b97dc5)
+
+![Image](https://github.com/user-attachments/assets/585bf839-edc1-43f7-9d8b-ee0832adb4d8)  
+
+---
+
