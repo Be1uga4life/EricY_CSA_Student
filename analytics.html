@@ -40,7 +40,7 @@
 <script>
     // Function to fetch grades and statistics from the server
     async function fetchGrades() {
-        const response = await fetch('http://localhost:8085/api/analytics/assignment/1/grades');  // Change '1' to the actual assignment ID if needed
+        const response = await fetch('http://localhost:8585/api/analytics/assignment/1/grades');  // Change '1' to the actual assignment ID if needed
         if (response.ok) {
             const data = await response.json();
 
