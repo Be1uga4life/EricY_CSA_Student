@@ -2,27 +2,81 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pixnapping</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>GPU Timing Test Page</title>
     <style>
-        body {
+        * {
             margin: 0;
             padding: 0;
-            background-color: black;
-            color: white;
-            font-family: Arial, sans-serif;
+            box-sizing: border-box;
         }
         
-        h1 {
-            margin: 0;
-            padding: 20px;
-            text-align: left;
-            font-size: 2em;
+        body, html {
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .black-box {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        /* Ensure full screen coverage */
+        body {
+            min-height: 100vh;
+            min-width: 100vw;
+        }
+        
+        /* Hide any browser UI elements */
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        
+        /* Prevent text selection */
+        * {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-touch-callout: none;
+            -webkit-tap-highlight-color: transparent;
         }
     </style>
 </head>
 <body>
-    <h1>Pixnapping</h1>
+    <div class="black-box"></div>
+    
+    <script>
+        // Prevent context menu
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        // Prevent zoom
+        document.addEventListener('touchstart', function(event) {
+            if (event.touches.length > 1) {
+                event.preventDefault();
+            }
+        }, { passive: false });
+        
+        // Ensure page stays in fullscreen-like mode
+        document.addEventListener('DOMContentLoaded', function() {
+            // Try to hide address bar on mobile
+            setTimeout(function() {
+                window.scrollTo(0, 1);
+            }, 100);
+        });
+        
+        // Optional: Log when page is loaded for debugging
+        console.log('GPU Timing Test Page Loaded - Black box centered');
+    </script>
 </body>
 </html>
-
